@@ -16,7 +16,8 @@
   },
   "scripts": {
     "start": "node --import='./scripts/register.js' ./src/main.ts",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepare": "husky"
   },
   "exports": {
     "./package.json": "./package.json"
@@ -29,7 +30,12 @@
     "@types/node": "^20.11.27",
     "eslint": "^8.57.0",
     "eslint-config-rakko": "^1.1.4",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.2"
+  },
+  "lint-staged": {
+    "*.{js, jsx, ts, tsx}": "eslint --fix"
   }
 }
