@@ -1,0 +1,22 @@
+{
+  "name": "sorapress",
+  "version": "0.0.0",
+  "description": "由 vite 和 solidjs 驱动的文档生成工具",
+  "repository": "github:suiyun39/sorapress",
+  "license": "MIT",
+  "keywords": [
+    "vite",
+    "solidjs",
+    "sorapress"
+  ],
+  "type": "module",
+  "packageManager": "pnpm@8.15.3",
+  "scripts": {},
+  "exports": {
+    "./package.json": "./package.json"
+  },
+  "files": [],
+  "dependencies": {
+    "vite": "^5.1.6"
+  }
+}
