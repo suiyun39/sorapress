@@ -7,6 +7,11 @@ import { createServer } from './server'
 const cli = cac(name)
 const logger = createLogger()
 
+function logVersion() {
+  const message = `${c.bold(name)} v${version}`
+  logger.info(`\n  ${c.green(message)}\n`, { clear: true })
+}
+
 // -------- dev --------
 cli.command('dev', 'start dev server')
 
@@ -14,6 +19,7 @@ cli.on('command:dev', async () => {
   const server = await createServer()
 
   await server.listen()
+  logVersion()
   server.printUrls()
   server.bindCLIShortcuts({ print: true })
 })
