@@ -23,8 +23,8 @@ devDependencies:
     specifier: ^8.57.0
     version: 8.57.0
   eslint-config-rakko:
-    specifier: ^1.1.4
-    version: 1.1.4(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(typescript@5.4.2)
+    specifier: ^1.1.5
+    version: 1.1.5(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(typescript@5.4.2)
   husky:
     specifier: ^9.0.11
     version: 9.0.11
@@ -1205,8 +1205,8 @@ packages:
       eslint: 8.57.0
     dev: true
 
-  /eslint-config-rakko@1.1.4(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(typescript@5.4.2):
-    resolution: {integrity: sha512-QdcaZ3k5zO3UF7frUd8xZ7qKjXYSOqP8x9/nGKb73f0yrgjiylqNR9PoZ1FT/tqDwN2Rz2bTyZdOH2ZPJ2ZGyg==}
+  /eslint-config-rakko@1.1.5(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(typescript@5.4.2):
+    resolution: {integrity: sha512-22rzChy0sJHteGPP3LvNKAG65V5YqkXweenC+cGV0FmdyjwCDMWIkN0bLc9VPrywqhDnoZIaKCetJ/kRiZWffw==}
     peerDependencies:
       eslint: ^8.57.0
     dependencies:
