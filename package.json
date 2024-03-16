@@ -27,7 +27,9 @@
     "cac": "^6.7.14",
     "mustache": "^4.2.0",
     "picocolors": "^1.0.0",
-    "vite": "^5.1.6"
+    "solid-js": "^1.8.15",
+    "vite": "^5.1.6",
+    "vite-plugin-solid": "^2.10.2"
   },
   "devDependencies": {
     "@types/mustache": "^4.2.5",
