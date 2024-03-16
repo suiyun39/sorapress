@@ -1,6 +1,7 @@
 import type { Plugin } from 'vite'
 import mustache from 'mustache'
 import entryTemplate from './template/entry.mustache?raw'
+import { CLIENT_ROOT } from '../../alias'
 
 function cleanUrl(url: string) {
   return url.replace(/#.*$/su, '').replace(/\?.*$/su, '')
@@ -8,7 +9,7 @@ function cleanUrl(url: string) {
 
 function renderEntry() {
   // todo: 从配置文件中获取信息
-  const config = { title: 'SoraPress' }
+  const config = { title: 'SoraPress', client: CLIENT_ROOT }
   return mustache.render(entryTemplate, config)
 }
 
